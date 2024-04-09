@@ -14,10 +14,13 @@ public class StackV1<T>   {
 
     private Node<T> top;
 
+    private int size;
+
     public void push(T data) {
         Node<T> node = new Node<>(data);
         node.next = top;
         top = node;
+        size++;
     }
 
 
@@ -27,6 +30,11 @@ public class StackV1<T>   {
             System.out.println(newNode.data);
             newNode = newNode.next;
         }
+    }
+
+    public T peek() {
+        if(isEmpty() ) throw new EmptyStackException();
+        return top.data;
     }
 
     public T get(int index) {
@@ -49,6 +57,7 @@ public class StackV1<T>   {
         if(top == null) throw new EmptyStackException();
         T item = top.data;
         top = top.next;
+        size--;
         return  item;
     }
 
@@ -57,8 +66,9 @@ public class StackV1<T>   {
         return top == null;
     }
 
-
-
+    public int size() {
+        return size;
+    }
 
 
 }

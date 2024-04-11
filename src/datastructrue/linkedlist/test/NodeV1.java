@@ -1,4 +1,4 @@
-package linkedlist.test;
+package datastructrue.linkedlist.test;
 
 public class NodeV1 {
     /*

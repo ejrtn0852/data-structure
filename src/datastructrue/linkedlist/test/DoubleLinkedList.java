@@ -1,9 +1,7 @@
-package linkedlist.test;
+package datastructrue.linkedlist.test;
 
 import java.util.Arrays;
-import java.util.LinkedList;
 import java.util.NoSuchElementException;
-import java.util.function.BinaryOperator;
 
 public class DoubleLinkedList<T> {
 

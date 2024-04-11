@@ -1,4 +1,4 @@
-package stack;
+package datastructrue.stack;
 
 import java.util.NoSuchElementException;
 

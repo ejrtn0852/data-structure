@@ -1,4 +1,4 @@
-package linkedlist.test;
+package datastructrue.linkedlist.test;
 
 public class LinkedListV2 {
     private Node header;

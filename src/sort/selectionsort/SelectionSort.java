@@ -8,11 +8,6 @@ public class SelectionSort {
 
         selectionSortV2(arr);
 
-
-
-
-
-
         int s = 0;
         System.out.print("[");
         for (int i : arr) {
@@ -24,8 +19,6 @@ public class SelectionSort {
             }
         }
         System.out.println("]");
-
-
     }
 
     public static void selectionSortV1 (int[] arr) {
